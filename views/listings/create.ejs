@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+</head>
+<body> -->
+    <% layout("/layout/boilerplate")%>
+  
+    <div class="row">
+    <div class="col-6 offset-3">
+
+        <h3>creating new list</h3>
+    <form action="/listings"method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title"class="form-label">Title</label><br>
+       
+ <input  name="listing[title]" placeholder="Add a catchy title" type="text"  class="form-control" required>
+    </input>
+<div class="invalid-feedback">Enter  name</div>
+    <br>
+    </div>
+   
+        <div class="mb-3">
+         <label for="description"class="form-label">Description</label>
+         <br>
+       <textarea name="listing[description]" id="" class="form-control" required></textarea>
+       <div class="invalid-feedback">Enter  feedback</div>
+       <br>
+       </div>
+       
+        <div class="mb-3">
+            <label for="image"class="form-label">Upload Listing Image </label><br>
+        <input type="file"name="listing[image]" class="form-control">
+        
+    </input>
+    required
+    
+    <br>
+    </div>
+    <div class="row" class="mb-3">
+        <div class="col-4">
+         <label for="price"class="form-label" >Price</label><br>
+        <input type="number"name="listing[price]" class="form-control" placeholder="1200"required>
+    </input>
+    <div class="invalid-feedback">Enter valid number</div>
+    <br>
+    </div>
+     <div class="col-8">
+         <label for="country"class="form-label">Country</label><br>
+      <input type="text"name="listing[country]"placeholder="India"class="form-control"required>
+    </input>
+    <div class="invalid-feedback">Enter  country</div>
+    <br>
+    </div>
+    </div> 
+    <div class="mb-3">
+        <label for="city"class="form-label">City</label><br>
+      <input type="text"name="listing[location]" placeholder="Hyderabad,Mumbai"class="form-control"required>
+    </input>
+    <div class="invalid-feedback">Enter  city</div>
+<br></div>
+    <br>
+    <button class="btn btn-dark add-btn">
+        add
+    </button>
+    </form>
+      </div>
+    </div>
+    
+<!-- </body>
+</html> -->
