@@ -10,7 +10,7 @@ const listingController = require("../controllers/listings.js");
 const multer = require("multer");
 // store uploads inside the `public/uploads` folder so Express can serve them
 
-const { storage } = require("../cloudconfig.js");
+const { storage } = require("../cloudConfig.js");
 const upload = multer({ storage });
 
 router
